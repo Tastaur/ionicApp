@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar color='primary'>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Первая страница</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Введите текст</ion-label>
+    <ion-input placeholder="Введите текст"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Выберите значение</ion-label>
+    <ion-select placeholder="Выберите значение">
+    	<ion-select-option value="1">Значение 1</ion-select-option>
+    	<ion-select-option value="2">Значение 2</ion-select-option>
+    	<ion-select-option value="3">Значение 3</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+    </ion-thumbnail>
+    <ion-label color="dark">
+      <p>Музыкальная группа</p>
+      <ion-text color="medium">
+        <h2>Название песни</h2>
+        <p>Название альбома</p>
+      </ion-text>
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+    </ion-thumbnail>
+    <ion-label>
+      <ion-text color="primary">
+        <h1>Срочная новость</h1>
+      </ion-text>
+      <h2>Или не очень</h2>
+      <p>Или не новость</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+    </ion-thumbnail>
+    <ion-label color="medium">
+      <p>Кофейня</p>
+      <ion-text color="dark">
+        <h2>Название кофе</h2>
+        <p>Рецепт</p>
+      </ion-text>
+    </ion-label>
+    <ion-button color="danger">
+      <ion-icon color="light" name='trash'></ion-icon>
+    </ion-button>
+  </ion-item>
+
+  <ion-button [routerLink]="'/first-app'" expand="block" fill="clear" shape="round" color="primary">
+    Понятно
+  </ion-button>
+</ion-content>

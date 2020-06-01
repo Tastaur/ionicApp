@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color='primary'>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title> Первая страница</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="text-align: center; padding: 5px;">
+  <ion-text class="ion-margin">
+    <h3> Первое приложение, <br> сделанное на <strong>Ionic</strong></h3>
+  </ion-text>
+  <ion-text>
+    <p>Это первое приложение с использованием данного FrameWork'a</p>
+  </ion-text>
+
+  <ion-item>
+    <ion-label position='floating'>Пожалуйста, оставьте свои комментарии </ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label>Мне понравилось </ion-label>
+    <ion-checkbox></ion-checkbox>
+  </ion-item>
+
+
+  <ion-button [routerLink]="'/tabs'" expand="block" fill="clear" shape="round" color="primary">
+    Отправить
+  </ion-button>
+
+
+
+
+</ion-content>
